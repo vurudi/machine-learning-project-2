@@ -1,0 +1,19 @@
+implement the Ford-Fulkerson algorithm. Namely use DFS to search for an argumenting
+path from s to t , instead of using BFS
+
+Generate n+2 node flow networks as follows, where node 0 and node n+1 are the start
+node and the target node, and the rest of the nodes are labeld as 1,2...,n. For each
+node i,i=0,...,n, use a pseudo-random number generator for the range between 0 and
+sqrt(n)//1 to generate a sequence c1,c2,...cn where cj is the capacity from node j.
+Do the same for node j to node n+1.
+
+
+Repeat the following for 10 times for each value of n from 100 to 200: (1). Generate
+an n+2 node flow network G. (2) Run Ford-fulkerson and edmond_karp on G, respectvely,
+output the maximum flow map and the actual running time . (3) compare the average
+running time of Ford-Fulkerson and Edmond-karp using a line graph with values of n
+being the x axis and the complexity of the values of Ford-Fulkerson and Edmond-Karp
+being the y-axis . what conclusions can you draw??
+
+
+
